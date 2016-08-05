@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.chongxue.po.BlogInfo">
+		<id name="username">
+			<!-- 主键由外部程序负责生成,在 save()之前指定 -->
+			<generator class="assigned"></generator>
+		</id>
+		<property name="blogtitle"></property>
+		<property name="idiograph"></property>
+	</class>	
+</hibernate-mapping>
+
+
+
